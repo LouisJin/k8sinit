@@ -58,7 +58,7 @@ if ! type docker >/dev/null 2>&1; then
 echo "start install docker..."
 yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-yum install -y https://mirrors.aliyun.com/docker-ce/linux/centos/${CENTOS_VERSION}/x86_64/stable/Packages/containerd.io-1.3.9-3.1.el${CENTOS_VERSION}.x86_64.rpm
+yum install -y https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.9-3.1.el7.x86_64.rpm
 yum install -y docker-ce-${DOCKER_VERSION} docker-ce-cli-${DOCKER_VERSION}
 fi
 
